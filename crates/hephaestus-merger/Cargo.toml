@@ -1,0 +1,9 @@
+[package]
+name = "hephaestus-merger"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+polars = { version = "0.55", features = ["lazy", "strings", "concat_str"] }
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+chrono = "0.4"
