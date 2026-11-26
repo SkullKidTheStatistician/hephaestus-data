@@ -3,6 +3,7 @@
 members = [
     "crates/hephaestus-merger",
     "crates/hephaestus-writer",
+    "crates/hephaestus-reader",
     # ajoute les autres crates quand ils existent
 ]
 resolver = "2"

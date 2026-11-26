@@ -15,6 +15,11 @@ cloud, no heavy infrastructure, and no Python environment to maintain.
 ## Directory layout
 
 ```text
+crates/
+├── hephaestus-merger/        # immutable source data, organized by date (YYYY/MM/DD)
+├── hephaestus-reader/    # cleaned data awaiting validation
+└── hephaestus-writer/    # analysis-ready data
+
 datalake/
 ├── raw/        # immutable source data, organized by date (YYYY/MM/DD)
 ├── staging/    # cleaned data awaiting validation

@@ -1,0 +1,19 @@
+[package]
+name = "hephaestus-reader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Polars pour les LazyFrame, scan_parquet, DataFrame, etc.
+polars = { version = "0.55", features = ["lazy", "parquet"] }
+
+# Le crate parquet bas niveau (utilisé dans ton code pour le splice et les métadonnées)
+# La version 60.x correspond à celle utilisée en interne par Polars 0.55
+parquet = "60.2.0" 
+
+# Chrono pour les timestamps (si utilisé dans le merge/append)
+chrono = "0.4"
+
+[dev-dependencies]
+# Uniquement pour les tests (création de dossiers temporaires)
+tempfile = "3"
